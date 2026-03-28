@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrouk | Frontend Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center logo-link" href="#">
+                <div class="logo-circle">
+                    <svg width="55" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="47" fill="currentColor"/>
+                        <text x="50" y="70" text-anchor="middle" font-size="50" font-weight="700" fill="#ffffff">S</text>
+                    </svg>
+                </div>
+                <span class="ms-2 fw-bold fs-2 brand-name shine-beam">Shrouk</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#tools">Tools</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#contact">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="btn btn-outline-secondary rounded-circle p-2 ms-3">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-9">
+                    <h1 class="display-1 fw-bold mb-3 hero-title">Hi, I'm <span class="name-highlight">Shrouk</span> 👋</h1>
+                    <p class="lead fs-3 mb-5 hero-subtitle">Frontend Developer crafting clean, modern, and responsive digital experiences.</p>
+                    <a href="#projects" class="btn hero-btn px-5 py-3 rounded-pill me-3">Explore My Work</a>
+                    <a href="#contact" class="btn btn-outline-dark px-5 py-3 rounded-pill">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-7">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead">
+                        I'm Shrouk, a passionate Frontend Developer with 2 years of experience. 
+                        I love building elegant and user-friendly websites using modern web technologies.
+                    </p>
+                </div>
+               <div class="col-lg-6 text-center">
+                    <div class="experience-circle mx-auto experience-glow">
+                    <div class="inner-circle">
+                        <h3>2</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Tools - 3 فوق + 2 تحت مع مسافات كبيرة ومربعات صغيرة -->
+    <section id="tools" class="py-7">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Technologies & Tools</h2>
+            <div class="row g-5 justify-content-center">
+                <!-- الصف الأول: 3 أدوات -->
+                <div class="col-6 col-md-4 col-lg-3 tool-card mt-5">
+                    <i class="fab fa-html5 fa-4x html-color"></i>
+                    <h5>HTML</h5>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 tool-card mt-5">
+                    <i class="fab fa-css3-alt fa-4x css-color"></i>
+                    <h5>CSS</h5>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 tool-card mt-5">
+                    <i class="fab fa-js fa-4x js-color"></i>
+                    <h5>JavaScript</h5>
+                </div>
+
+                <!-- الصف الثاني: 2 أدوات -->
+                <div class="col-6 col-md-4 col-lg-3 tool-card">
+                    <i class="fab fa-bootstrap fa-4x bootstrap-color"></i>
+                    <h5>Bootstrap</h5>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 tool-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" width="60">
+                    <h5>Tailwind</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-7">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Featured Projects</h2>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 project-card mt-5">
+                    <img src="project1.png" class="img-fluid rounded-3" alt="food-lover">
+                    <h5 class="mt-4">Modern E-Commerce Store</h5>
+                    <p>Fully responsive online store with smooth user experience.</p>
+                    <a href="https://shroukabdelmgeed24054-ux.github.io/shroukabdelmgeed/?authuser=0" class="btn btn-primary btn-md mt-3" >View Project →</a>
+                </div>
+                <div class="col-md-6 col-lg-3 project-card mt-5">
+                    <img src="project2.png" class="img-fluid rounded-3" alt="wexy">
+                    <h5 class="mt-4">Admin Dashboard</h5>
+                    <p>Clean dashboard interface with dark/light mode.</p>
+                    <a href="https://shroukabdelmgeed24054-ux.github.io/Appexy.project/" class="btn btn-primary btn-md mt- ">View Project →</a>
+                </div>
+                <div class="col-md-6 col-lg-3 project-card mt-5">
+                    <img src="project3.png" class="img-fluid rounded-3" alt="furni">
+                    <h5 class="mt-4">Task Management App</h5>
+                    <p>Interactive to-do app with local storage.</p>
+                    <a href="https://shroukabdelmgeed24054-ux.github.io/furni_project/?authuser=0" class="btn btn-primary btn-md mt-3">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <!-- Contact -->
+    <section id="contact" class="py-7">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name" required></div>
+                            <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email" required></div>
+                        </div>
+                        <textarea class="form-control mt-3 " rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mt-4">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <h5 class="mb-3">Connect with me</h5>
+                <div class="d-flex justify-content-center gap-4 fs-2">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/20123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center">
+        <p class="mb-0">&copy; 2026 Shrouk. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
