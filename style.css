@@ -18,11 +18,11 @@ body {
 
 /* Dark Mode */
 body.dark {
-    --bg-light: #1b1b2d;                 /* خلفية داكنة ناعمة */
-    --text-light: #e6e6e9;               /* نص فاتح */
-    --card-light: #252432;               /* كروت غامقة */
-    --accent: #a78bfa;                   /* موف هادي */
-    --accent-hover: #c4b5fd;             /* موف أفتح */
+    --bg-light: #1b1b2d;               
+    --text-light: #e6e6e9;               
+    --card-light: #252432;              
+    --accent: #a78bfa;                   
+    --accent-hover: #c4b5fd;             
     --text-muted: #bfbfca;               
 }
 
@@ -159,7 +159,7 @@ body.dark section {
     font-weight: 700;
     position: relative;
     display: inline-block;
-    margin-bottom: 70px !important;
+    margin-bottom: 50px !important;
     margin-top: 3px !important;
 }
 .section-title.text-center {
@@ -232,8 +232,6 @@ body.dark section {
 body.dark .experience-glow:hover {
     box-shadow: 0 0 40px rgba(167, 139, 250, 0.35);
 }
-
-/* لمعة خفيفة داخل الدائرة */
 .experience-glow::before {
     content: '';
     position: absolute;
